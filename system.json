@@ -1,5 +1,6 @@
 {
   "id": "loc",
+  "name": "loc",
   "title": "Legends of Celesia",
   "description": "Legends of Celesia game system",
   "version": "alpha-23.01.20",
@@ -26,7 +27,7 @@
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
-  "primaryTokenAttribute": "attributes.hp",
+  "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": "bleed",
   "url": "https://github.com/Jaywaii/legends-of-celesia-vtt.git",
   "manifest": "https://github.com/Jaywaii/legends-of-celesia-vtt/blob/main/system.json",
