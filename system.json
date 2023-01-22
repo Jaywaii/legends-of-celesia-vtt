@@ -3,7 +3,11 @@
   "title": "Legends of Celesia",
   "description": "Legends of Celesia game system",
   "version": "alpha-23.01.20",
-  "compatibility": {},
+  "compatibility": {
+    "minimum": "10",
+  	"verified": "10",
+	  "maximum": "10"
+  },
   "authors": [
     {
       "name": "Jonathan Yeung"
@@ -20,7 +24,6 @@
       "path": "lang/en.json"
     }
   ],
-  "initiative": "1d20 + @attributes.init.total + (@attributes.init.total / 100)",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
