@@ -1,9 +1,9 @@
 {
-  "id": "loc",
-  "name": "loc",
+  "id": "celesia",
+  "name": "celesia",
   "title": "Legends of Celesia",
   "description": "Legends of Celesia game system",
-  "version": "alpha-23.01.20",
+  "version": "alpha-23.01.22",
   "compatibility": {
     "minimum": "10",
   	"verified": "10",
@@ -14,8 +14,8 @@
       "name": "Jonathan Yeung"
     }
   ],
-  "esmodules": ["module/loc.mjs"],
-  "styles": ["css/loc.css"],
+  "esmodules": ["module/celesia.mjs"],
+  "styles": ["css/celesia.css"],
   "scripts": [],
   "packs": [],
   "languages": [
