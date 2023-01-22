@@ -1,0 +1,22 @@
+{
+  "CELESIA.AbilityStr": "Strength",
+  "CELESIA.AbilityCon": "Constitution",
+  "CELESIA.AbilityDex": "Dexterity",
+  "CELESIA.AbilityInt": "Intelligence",
+  "CELESIA.AbilityWis": "Wisdom",
+  "CELESIA.AbilityCha": "Charisma",
+
+  "CELESIA.AbilityStrAbbr": "str",
+  "CELESIA.AbilityConAbbr": "con",
+  "CELESIA.AbilityDexAbbr": "dex",
+  "CELESIA.AbilityIntAbbr": "int",
+  "CELESIA.AbilityWisAbbr": "wis",
+  "CELESIA.AbilityChaAbbr": "cha",
+
+  "CELESIA.EffectCreate": "Create Effect",
+  "CELESIA.EffectToggle": "Toggle Effect",
+  "CELESIA.EffectEdit": "Edit Effect",
+  "CELESIA.EffectDelete": "Delete Effect",
+
+  "CELESIA.Add": "Add"
+}
