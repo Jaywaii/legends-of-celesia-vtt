@@ -1,0 +1,27 @@
+{
+  "Actor": {
+    "types": ["creature"],
+    "templates": {
+      "common": {
+        "abilities": {
+          "str": {
+            "base": 0,
+            "lvlup": 0,
+            "dmg": 0,
+            "drain": 0,
+            "penalty": 0
+          }
+        }
+      }
+    },
+    "creature": {
+      "templates": ["common"]
+    }
+  },
+  "Item": {
+    "types": [],
+    "templates": {
+      
+    }
+  }
+}
