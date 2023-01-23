@@ -64,6 +64,7 @@ export class CelesiaActorSheet extends ActorSheet {
     // Handle ability scores.
     for (let [k, v] of Object.entries(context.system.abilities)) {
       v.label = game.i18n.localize(CONFIG.CELESIA.abilities[k]) ?? k;
+      v.labelAbbr = game.i18n.localize(CONFIG.CELESIA.abilityAbbreviations[k]) ?? k;
     }
   }
 

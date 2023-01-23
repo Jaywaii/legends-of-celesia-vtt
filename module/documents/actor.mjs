@@ -46,12 +46,25 @@ export class CelesiaActor extends Actor {
 
     // Make modifications to data here. For example:
     const systemData = actorData.system;
+    const abilities = systemData.abilities;
 
     // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(systemData.abilities)) {
+    for (let [key, ability] of Object.entries(abilities)) {
       // Calculate the modifier using d20 rules.
       ability.value = ability.base + ability.lvlup - ability.dmg - ability.drain - ability.penalty;
       ability.mod = Math.floor((ability.value - 10) / 2);
+    }
+
+    // Sanity
+    let sanity = systemData.sanity;
+    sanity.score = abilities.int + abilities.wis + abilities.cha;
+    sanity.edge = floor(sanity.score/2);
+    if (abilities.int.value >= abilities.wis.value && abilities.int.value >= abilities.cha.value) {
+      sanity.threshold = abilities.int.mod;
+    } else if (abilities.wis.value >= abilities.cha.value) {
+      sanity.threshold = abilities.wis.mod;
+    } else {
+      sanity.threshold = abilities.cha.mod;
     }
   }
 

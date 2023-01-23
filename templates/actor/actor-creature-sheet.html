@@ -3,24 +3,94 @@
     
   </header>
   <section class="sheet-body">
-    {{#each system.abilities as |ability key|}}
     <div class="ability flexrow flex-group-center">
-      <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-      <label class="resource-label rollable flexlarge align-left" data-label="{{ability.value}}">{{ability.value}}</label>
-      <label>(</label>
-      <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
-      <label>)</label>
-      <label>=</label>
-      <input type="text" name="system.abilities.{{key}}.base" value="{{ability.base}}" data-dtype="Number"/>
-      <label>+</label>
-      <input type="text" name="system.abilities.{{key}}.lvlup" value="{{ability.lvlup}}" data-dtype="Number"/>
-      <label>-</label>
-      <input type="text" name="system.abilities.{{key}}.dmg" value="{{ability.dmg}}" data-dtype="Number"/>
-      <label>-</label>
-      <input type="text" name="system.abilities.{{key}}.drain" value="{{ability.drain}}" data-dtype="Number"/>
-      <label>-</label>
-      <input type="text" name="system.abilities.{{key}}.penalty" value="{{ability.penalty}}" data-dtype="Number"/>
+      <table>
+        <thead>
+          <tr>
+            <th>Ability</th>
+            <th>Total</th>
+            <th>Modifier</th>
+            <th></th>
+            <th>Base</th>
+            <th></th>
+            <th>Level</th>
+            <th></th>
+            <th>Damage</th>
+            <th></th>
+            <th>Drain</th>
+            <th></th>
+            <th>Penalty</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each system.abilities as |ability key|}}
+          <tr>
+            <td>
+              <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left ability-label" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.labelAbbr}}">{{ability.labelAbbr}}</label>
+            </td>
+            <td>
+              <label class="resource-label rollable flexlarge align-left" data-label="{{ability.value}}">{{ability.value}}</label>
+            </td>
+            <td>
+              (
+              <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+              )
+            </td>
+            <td>=</td>
+            <td>
+              <input type="text" name="system.abilities.{{key}}.base" value="{{ability.base}}" data-dtype="Number"/>
+            </td>
+            <td>+</td>
+            <td>
+              <input type="text" name="system.abilities.{{key}}.lvlup" value="{{ability.lvlup}}" data-dtype="Number"/>
+            </td>
+            <td>-</td>
+            <td>
+              <input type="text" name="system.abilities.{{key}}.dmg" value="{{ability.dmg}}" data-dtype="Number"/>
+            </td>
+            <td>-</td>
+            <td>
+              <input type="text" name="system.abilities.{{key}}.drain" value="{{ability.drain}}" data-dtype="Number"/>
+            </td>
+            <td>-</td>
+            <td>
+              <input type="text" name="system.abilities.{{key}}.penalty" value="{{ability.penalty}}" data-dtype="Number"/>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
     </div>
-    {{/each}}
+    <div class="ability flexrow flex-group-center">
+      <table>
+        <thead>
+          <tr>
+            <th>Sanity</th>
+          </tr>
+          <tr>
+            <th>Damage</th>
+            <th>Score</th>
+            <th>Edge</th>
+            <th>Threshold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" name="system.sanity.current" value="{{system.sanity.current}}" data-dtype="Number"/>
+            </td>
+            <td>
+              <label data-label="{{system.sanity.score}}">{{system.sanity.score}}</label>
+            </td>
+            <td>
+              <label data-label="{{system.sanity.edge}}">{{system.sanity.edge}}</label>
+            </td>
+            <td>
+              <label data-label="{{system.sanity.threshold}}">{{system.sanity.threshold}}</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 </form>
