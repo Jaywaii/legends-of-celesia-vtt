@@ -3,25 +3,90 @@
     "types": ["creature"],
     "templates": {
       "common": {
-        "abilities": {
-          "str": {
-            "base": 0,
-            "lvlup": 0,
-            "dmg": 0,
-            "drain": 0,
-            "penalty": 0
-          }
-        }
       }
     },
     "creature": {
-      "templates": ["common"]
+      "templates": ["common"],
+      "abilities": {
+        "str": {
+          "base": 0,
+          "lvlup": 0,
+          "dmg": 0,
+          "drain": 0,
+          "penalty": 0
+        },
+        "dex": {
+          "base": 0,
+          "lvlup": 0,
+          "dmg": 0,
+          "drain": 0,
+          "penalty": 0
+        },
+        "con": {
+          "base": 0,
+          "lvlup": 0,
+          "dmg": 0,
+          "drain": 0,
+          "penalty": 0
+        },
+        "int": {
+          "base": 0,
+          "lvlup": 0,
+          "dmg": 0,
+          "drain": 0,
+          "penalty": 0
+        },
+        "wis": {
+          "base": 0,
+          "lvlup": 0,
+          "dmg": 0,
+          "drain": 0,
+          "penalty": 0
+        },
+        "cha": {
+          "base": 0,
+          "lvlup": 0,
+          "dmg": 0,
+          "drain": 0,
+          "penalty": 0
+        }
+      },
+      "background": {
+        "name": ""
+      },
+      "hp": {
+        "current": 0
+      },
+      "sanity": {
+        "current": 0
+      },
+      "classes": [],
+      "feats": []
     }
   },
   "Item": {
-    "types": [],
+    "types": ["armor", "background", "class", "item", "weapon"],
     "templates": {
-      
+      "object": {
+
+      }
+    },
+    "background": {
+      "boosts": [],
+      "feats": [],
+      "skills": []
+    },
+    "class": {
+      "template": [],
+      "hd": 8,
+      "bab": {"progression": "medium"},
+      "savingThrows": {
+        "fort": {"progression": "poor"},
+        "ref": {"progression": "poor"},
+        "will": {"progression": "poor"}
+      },
+      "lvl": 0,
+      "boosts": []
     }
   }
 }
