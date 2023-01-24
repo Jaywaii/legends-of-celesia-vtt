@@ -7,9 +7,6 @@ export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
 
     // Actor partials.
-    "systems/celesia/templates/actor/parts/actor-features.html",
-    "systems/celesia/templates/actor/parts/actor-items.html",
-    "systems/celesia/templates/actor/parts/actor-spells.html",
-    "systems/celesia/templates/actor/parts/actor-effects.html",
+    "systems/celesia/templates/actor/parts/actor-statistics.html",
   ]);
 };

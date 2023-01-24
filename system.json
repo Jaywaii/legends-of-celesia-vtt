@@ -3,7 +3,7 @@
   "name": "celesia",
   "title": "Legends of Celesia",
   "description": "Legends of Celesia game system",
-  "version": "alpha-23.01.22",
+  "version": "alpha-23.01.23",
   "compatibility": {
     "minimum": 10,
   	"verified": 10

@@ -3,3 +3,19 @@
   font-variant: all-small-caps;
   font-weight: bold;
 }
+.header-main {
+  font-size: large;
+  font-variant: all-small-caps;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.header-sub {
+  font-size: small;
+  font-style: italic;
+  font-variant: all-small-caps;
+  font-weight: bold;
+}
+td {
+  text-align: center;
+  vertical-align: center;
+}
