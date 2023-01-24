@@ -57,8 +57,8 @@ export class CelesiaActor extends Actor {
 
     // Sanity
     let sanity = systemData.sanity;
-    sanity.score = abilities.int + abilities.wis + abilities.cha;
-    sanity.edge = floor(sanity.score/2);
+    sanity.score = abilities.int.value + abilities.wis.value + abilities.cha.value;
+    sanity.edge = Math.floor(sanity.score / 2);
     if (abilities.int.value >= abilities.wis.value && abilities.int.value >= abilities.cha.value) {
       sanity.threshold = abilities.int.mod;
     } else if (abilities.wis.value >= abilities.cha.value) {
